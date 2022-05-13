@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="styles/main_page.css">
+    <link rel="stylesheet" type="text/css" href="styles/photo_page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+</head>
+
+<body>
+<div class="preloader" id="preloader">
+    <div class="preloader__row">
+        <div class="preloader__item"></div>
+        <div class="preloader__item"></div>
+    </div>
+</div>
+
+<div class="header" id="header">
+    <div class="header__inner" id="header__inner">
+        <div class="logo">
+            <img class="logo__image" src="images/logo.png" alt="">
+        </div>
+        <div class="logo_text" id="logo_text">
+            <h1 class="logo__title1">God</h1><h1 class="logo__title2">Weather</h1>
+        </div>
+    </div>
+    <div class="header__links">
+        <div class="link"><a href="index.html">Home</a></div>
+        <div class="link now">
+            <a href="photo_page.html" id="menu_photos">Photos</a>
+            <div class="extra_photo_menu">
+                <div class="upload_menu" id="upload_menu">
+                    <a href="upload_files.html">Upload images</a>
+                </div>
+            </div>
+        </div>
+        <div class="link"><a href="contacts_page.html">Contact Us</a></div>
+    </div>
+</div>
+
+<div class="background_header" id="background_header"></div>
+
+<div class="wrapper">
+    <div class="image-slider swiper-container">
+        <div class="image-slider__wrapper swiper-wrapper"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-scrollbar"></div>
+    </div>
+</div>
+
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="js/change_on_scroll_and_mouse.js"></script>
+<script src="js/get_files_from_dir.js"></script>
+<script src="js/slider.js"></script>
+
+
+</body>
+</html>

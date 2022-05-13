@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="styles/main_page.css">
+    <link rel="stylesheet" type="text/css" href="styles/contacts_page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="preloader" id="preloader">
+    <div class="preloader__row">
+        <div class="preloader__item"></div>
+        <div class="preloader__item"></div>
+    </div>
+</div>
+
+<div class="header" id="header">
+    <div class="header__inner" id="header__inner">
+        <div class="logo">
+            <img class="logo__image" src="images/logo.png" alt="">
+        </div>
+        <div class="logo_text" id="logo_text">
+            <h1 class="logo__title1">God</h1><h1 class="logo__title2">Weather</h1>
+        </div>
+    </div>
+    <div class="header__links">
+        <div class="link"><a href="index.html">Home</a></div>
+        <div class="link">
+            <a href="photo_page.html" id="menu_photos">Photos</a>
+            <div class="extra_photo_menu">
+                <div class="upload_menu" id="upload_menu">
+                    <a href="upload_files.html">Upload images</a>
+                </div>
+            </div>
+        </div>
+        <div class="link now"><a href="contacts_page.html">Contact Us</a></div>
+    </div>
+</div>
+
+<div class="background_header" id="background_header"></div>
+
+<div class="contact-div">
+    <div class="get-in-touch">
+        <h1>Get in touch</h1>
+        <input type="text" maxlength="50" id="name" placeholder="Name *" >
+        <input type="text" maxlength="150"id="email" placeholder="Email *" >
+        <input type="text" maxlength="50" id="subject" placeholder="Subject" >
+        <textarea type="text" maxlength="1000" id="message" placeholder="Message *" ></textarea>
+        <button id="buttSend">SEND</button>
+    </div>
+    <div class="contacts">
+        <h1>Contact Us</h1>
+        <div class="info-div">
+            <img src="images/location-pointer.png" alt="">
+            <h2>ADDRESS:</h2>
+        </div>
+        <p>Peremohy Ave, 37, Kyiv, 03056, Ukraine</p>
+        <div class="info-div">
+            <img src="images/phone-call.png" alt="">
+            <h2>PHONE:</h2>
+        </div>
+        <p>+380669632161</p>
+        <div class="info-div">
+            <img src="images/email.png" alt="">
+            <h2>EMAIL:</h2>
+        </div>
+        <p>pizhuk.david.kpi@gmail.com</p>
+        <div class="info-div">
+            <img src="images/globe.png" alt="">
+            <h2>WEBSITE:</h2>
+        </div>
+        <p>godweather.com</p>
+        <div class="info-div social">
+            <a href="https://www.instagram.com/pizhuchio/"><img src="images/instagram.png" alt=""></a>
+            <a href="https://www.facebook.com/profile.php?id=100009436354722"><img src="images/facebook-app-symbol.png" alt=""></a>
+            <a href="https://t.me/pizhuchio"><img src="images/telegram.png" alt=""></a>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="js/change_on_scroll_and_mouse.js"></script>
+<script src="js/validate_contactpage_and_send_to_bot.js"></script>
+</body>
+</html>

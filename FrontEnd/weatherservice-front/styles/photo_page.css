@@ -1,0 +1,26 @@
+body{
+    background-color: #333;
+    overflow: hidden;
+}
+.wrapper{
+    min-height: 100%;
+    padding: 30px;
+}
+.image-slider{
+    padding: calc((100vh - 9.1vw)/13) 0 ;
+}
+.image-slider__wrapper{
+}
+.image-slider__image{
+    text-align: center;
+}
+.image-slider__image img{
+    max-width: 100%;
+    height: calc((100vh - 9.1vw)/1.5);
+}
+
+.image-slider .swiper-button-prev::after,
+.image-slider .swiper-button-next::after{
+    color: #e0e0e0;
+    font-size: 3vw;
+}
